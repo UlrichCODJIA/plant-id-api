@@ -1,0 +1,8 @@
+flask
+tensorflow
+pillow
+numpy
+gunicorn
+scikit-learn
+lime
+scikit-image
