@@ -169,6 +169,7 @@ def identify_plant():
     for image_file in images:
         if not allowed_file(image_file.filename):
             abort(400, description="Invalid file extension")
+        print('okkk', image_file.content_type)
         if image_file.content_type not in app.config["ALLOWED_CONTENT_TYPES"]:
             abort(400, description="Invalid file content type")
 
